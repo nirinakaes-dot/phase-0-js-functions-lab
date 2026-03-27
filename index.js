@@ -8,8 +8,8 @@ module.exports = { calculateTax, convertToUpperCase, findMaximum, isPalindrome, 
 
 //1.Calculate Tax
 
-function calculateTax(a){
-    return a * 0.10;
+function calculateTax(amount){
+    return amount * 0.10;
 }
 console.log(calculateTax(1000000))
 
@@ -22,17 +22,16 @@ console.log(convertToUpperCase("Nina"))
 
 //3.Finding the maximum
 function findMaximum(num1,num2){let maximum; if(num1>num2){maximum = num1}else if(num2>num1) { maximum = num2} else {maximum = null} return maximum
-}
-findMaximum(3,4)
-console.log(findMaximum(3,4))
+} console.log(findMaximum(3,4))
 
 //4.Checking reveresed word matches original
 
 function isPalindrome (word){
-    const wordReversed = word.split('').reverse('').join('');
+    const lowerCase = word.toUpperCase()
+    const wordReversed = lowerCase.split('').reverse().join('');
     return word === wordReversed;
 }
-console.log(isPalindrome("madam"))
+console.log(isPalindrome("dad"))
 
 //5.Calculate Discount
 
