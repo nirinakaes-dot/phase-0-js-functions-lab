@@ -21,17 +21,17 @@ function convertToUpperCase(text){
 console.log(convertToUpperCase("Nina"))
 
 //3.Finding the maximum
-function findMaximum(num1,num2){let maximum; if(num1>num2){maximum = num1}else if(num2>num1) { maximum = num2} else {maximum = null} return maximum
-} console.log(findMaximum(3,4))
+function findMaximum(num1,num2){let maximum; if(num1>num2){maximum = num1}else if(num2>num1) { maximum = num2} else {maximum = num1} return maximum
+} console.log(findMaximum(4,4))
 
 //4.Checking reveresed word matches original
 
 function isPalindrome (word){
     const lowerCase = word.toUpperCase()
     const wordReversed = lowerCase.split('').reverse().join('');
-    return word === wordReversed;
+    return word === wordReversed 
 }
-console.log(isPalindrome("dad"))
+console.log(isPalindrome("t"))
 
 //5.Calculate Discount
 
